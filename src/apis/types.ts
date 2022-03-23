@@ -6,9 +6,6 @@ export interface RequestInterceptors<T = AxiosResponse> {
   responseInterceptor?: (res: T) => T
   responseInterceptorCatch?: (error: any) => any
 }
-interface Demo {
-
-}
 export interface RequestConfig<T = AxiosResponse>
   extends AxiosRequestConfig {
   //继承后有父类所有属性

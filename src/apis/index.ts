@@ -1,7 +1,7 @@
 import Request from './axios'
 const Requests = new Request({
   // baseURL: 'http://localhost:8080',
-  baseURL: 'http://120.24.97.232:8080',
+  baseURL: 'http://120.24.97.232:3000',
   timeout: 10000,
   interceptors: {
     requestInterceptor: (config) => {
