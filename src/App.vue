@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { NMessageProvider } from "naive-ui"
-
+import { NMessageProvider } from "naive-ui";
 </script>
 
 <template>
-  <n-message-provider>
+	<n-message-provider>
 		<router-view />
 	</n-message-provider>
 </template>
@@ -75,6 +74,7 @@ ol {
 }
 a {
 	text-decoration: none;
+	color: #333;
 }
 a:hover {
 	text-decoration: none;

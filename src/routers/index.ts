@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 const Home = () => import('../views/Home/Home.vue');
-const Found = () => import('../views/Home/Found.vue');
+const Found = () => import('../views/Found/Found.vue');
 
 const routes: RouteRecordRaw[] = [
   {
@@ -25,9 +25,8 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   document.title = (to?.meta?.title as string) || document.title;
-  // if(to?.fullPath !== from?.fullPath) 
-    next();
-  
+  next();
+
 })
 
 export default router;

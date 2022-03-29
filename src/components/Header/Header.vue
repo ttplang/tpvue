@@ -69,6 +69,7 @@ const store = headerStore();
 			</div>
 		</div>
 	</div>
+	<div></div>
 </template>
 
 <style scoped>
